@@ -1,21 +1,26 @@
 <template>
-  <div class="container">
-    <h1>Vue Dashboard Example</h1>
-    <ChartExample />
+  <div class="layout">
+    <Sidebar />
+    <div class="content">
+      <HeaderBar />
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script setup>
-import ChartExample from './components/ChartExample.vue'
+import Sidebar from './components/Sidebar.vue'
+import HeaderBar from './components/HeaderBar.vue'
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f3f3;
+.layout {
+  display: flex;
+  height: 100vh;
 }
-.container {
-  padding: 20px;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 </style>

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: #0b0f17;
+  color: #d3e1ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card {
+  background: rgba(20, 25, 45, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(80, 100, 200, 0.3);
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.2);
+}
+
+.glow {
+  text-shadow: 0 0 8px #4fb4ff;
+}
