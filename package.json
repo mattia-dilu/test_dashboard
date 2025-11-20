@@ -1,6 +1,8 @@
 {
-  "name": "test-dashboard",
+  "name": "earth-observation-dashboard",
   "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -8,6 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.0",
+    "vue-router": "^4.2.5",
     "echarts": "^5.5.0",
     "vue-echarts": "^6.6.0"
   },
