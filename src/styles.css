@@ -1,3 +1,4 @@
+/* FONT + base theme */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
@@ -7,23 +8,60 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-.card {
-  background: rgba(20, 25, 45, 0.7);
+/* Container generale */
+.page {
   padding: 20px;
+}
+
+/* Mappa */
+.map-container {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  border: 1px solid rgba(100, 140, 255, 0.3);
   border-radius: 12px;
-  border: 1px solid rgba(80, 100, 200, 0.3);
   box-shadow: 0 0 15px rgba(0, 120, 255, 0.2);
 }
 
-
-.glow {
-  text-shadow: 0 0 8px #4fb4ff;
-}
-
-.map-chart, .map-chart canvas, .map-chart svg {
+/* FIX anti override: garantisce che ECharts mantenga dimensioni */
+:deep(.map-chart),
+:deep(.map-chart canvas),
+:deep(.map-chart svg) {
   width: 100% !important;
   height: 100% !important;
   display: block !important;
-  visibility: visible !important;
   position: relative !important;
+  visibility: visible !important;
+  contain: layout !important;
+}
+
+.controls {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+.controls button {
+  background: rgba(20, 25, 45, 0.85);
+  color: #4fb4ff;
+  border: 1px solid #4fb4ff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.controls button:hover {
+  background: rgba(79, 180, 255, 0.25);
+}
+
+/* DEBUG — per capire se un container sta andando a 0px */
+.debug-border {
+  outline: 1px solid red !important;
 }
