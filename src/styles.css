@@ -15,6 +15,15 @@ body {
   box-shadow: 0 0 15px rgba(0, 120, 255, 0.2);
 }
 
+
 .glow {
   text-shadow: 0 0 8px #4fb4ff;
+}
+
+.map-chart, .map-chart canvas, .map-chart svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  visibility: visible !important;
+  position: relative !important;
 }

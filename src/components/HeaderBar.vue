@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1 class="glow">Earth Observation Dashboard</h1>
+    <h1 class="glow">Earth Observation</h1>
     <div class="status">🟢 SYSTEM ONLINE</div>
   </div>
 </template>
